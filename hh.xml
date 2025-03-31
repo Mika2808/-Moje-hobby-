@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hipertext SYSTEM "hh.dtd">
+<hipertext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="hh.xsd">
+	<author>
+		<name>Mikołaj</name>
+		<surname>Kabała</surname>
+	</author>
+	<introduction>
+		Manchester City to jeden z topowych klubów grający w anglielskiej lidze. Przez ostatnie 7 sezonów znajdowali się w pierwszej 3 najlepszych zespołów Premier League. Chciałbym się skupić na najbardziej wyróżniających się zawodników z poszczególnych pozycji(bramkarz,obrońca,pomocnik,napastnik), którzy według mnie najbardziej przyczyniają się do ciągłych sukcesów Manchesteru City.
+	</introduction>
+	<players>
+		<player nationality="Brazylia" nr_koszuki="31" wartoscrynkowa="45mln" bleg="lewa">
+			<name>Ederson</name>
+			<surname>Santana de Moraes</surname>
+			<birth>
+				<day>17</day>
+				<month>Sierpnia</month>
+				<year>1993</year>
+				<place>Osasco</place>
+			</birth>	 		
+			<position>Bramkarz</position>
+			<image source="Ederson.jpg">Ederson Satana de Moraes</image>
+			<link source="https://pl.wikipedia.org/wiki/Ederson_(ur._1993)">Ederson Satana de Moraes</link>
+			<link source="https://www.transfermarkt.pl/ederson/profil/spieler/238223">Ederson Satana de Moraes</link>
+			<achievements>
+				<achievement n="1">
+					<title>Puchar Ligi Angielskiej</title>
+					<years>
+						<year>2017/2018</year>
+						<year>2018/2019</year>
+						<year>2019/2020</year>
+					</years>
+				</achievement>
+				<achievement n="2">
+					<title> Mistrzostwo Copa América</title>
+					<years>
+						<year>2019</year>
+					</years>
+				</achievement>
+				<achievement n="3">
+						<title>Rekord Guinnessa w najdłuższym wykopie piłki (75,35 m)</title>
+						<years>
+							<year>2018</year>
+						</years>
+					</achievement>				
+				</achievements>
+		</player>
+		
+		<player  nationality="Anglia" nr_koszuki="2" wartoscrynkowa="15mln" bleg="prawa">
+			<name>Kyle</name>
+			<surname>Walker</surname>
+			<birth>
+				<day>28</day>
+				<month>Maja</month>
+				<year>1990</year>
+				<place>Sheffield</place>
+			</birth>			
+			<position>Obrońca</position>
+			<image source="Walker.jpg">Kyle Walker</image>
+			<link source="https://pl.wikipedia.org/wiki/Kyle_Walker">Kyle Walker</link>
+			<link source="https://www.transfermarkt.pl/kyle-walker/profil/spieler/95424">Kyle Walker</link>
+			<achievements>
+				<achievement n="1">
+					<title>Puchar Ligi Angielskiej</title>
+						<years>
+							<year>2017/2018</year>
+							<year>2018/2019</year>
+							<year>2019/2020</year>
+						</years>
+				</achievement>
+				<achievement n="2">
+					<title> Wicemistrzostwo Europy</title>
+						<years>
+							<year>2020</year>
+						</years>
+				</achievement>
+				<achievement n="3">
+					<title>Młody piłkarz roku w Premier League według PFA</title>
+						<years>
+							<year>2011/12</year>
+						</years>
+				</achievement>				
+			</achievements>
+		</player>
+		
+		<player  nationality="Belgia" nr_koszuki="17" wartoscrynkowa="80mln"  bleg="prawa">
+			<name>Kevin</name>
+			<surname>De Bruyne</surname>
+			<birth>
+				<day>28</day>
+				<month>Czerwca</month>
+				<year>1991</year>
+				<place>Drongen</place>
+			</birth>			
+			<position>Pomocnik</position>
+			<image source="Kevin.jpg">Kevin De Bruyne</image>
+			<link source="https://pl.wikipedia.org/wiki/Kevin_De_Bruyne">Kevin De Bruyne</link>
+			<link source="https://www.transfermarkt.pl/kevin-de-bruyne/profil/spieler/88755">Kevin De Bruyne</link>
+			<achievements>
+				<achievement n="1">
+					<title>Puchar Ligi Angielskiej</title>
+						<years>
+							<year>2015/2016</year>
+							<year>2017/2018</year>
+							<year>2018/2019</year>
+							<year>2019/2020</year>
+							<year>2020/2021</year>
+						</years>
+				</achievement>
+				<achievement n="2">
+					<title>3 Miejsce na Mistrzostwach Świata</title>
+						<years>
+							<year>2018</year>
+						</years>
+				</achievement>
+				<achievement n="3">
+					<title>Najlepszy asystent Mistrzostw Świata</title>
+						<years>
+							<year>2018</year>
+						</years>
+				</achievement>				
+			</achievements>
+		</player>
+		
+		<player  nationality="Norwegia" nr_koszuki="9" wartoscrynkowa="170mln"  bleg="lewa">
+			<name>Erling</name>
+			<surname>Haaland</surname>
+			<birth>
+				<day>21</day>
+				<month>Lipca</month>
+				<year>2000</year>
+				<place>Leeds</place>
+			</birth>			
+			<position>Napastnik</position>
+			<image source="Erling.jpg">Erling Haaland</image>
+			<link source="https://pl.wikipedia.org/wiki/Erling_Haaland">Erling Haaland</link>
+			<link source="https://www.transfermarkt.pl/erling-haaland/profil/spieler/418560">Erling Haaland</link>
+			<achievements>
+				<achievement n="1">
+					<title>Puchar Niemiec</title>
+						<years>
+							<year>2020/2021</year>
+						</years>
+				</achievement>
+				<achievement n="2">
+					<title>Król strzelców Ligi Mistrzów UEFA</title>
+						<years>
+							<year>2020/2021</year>
+						</years>
+				</achievement>
+				<achievement n="3">
+					<title>Najlepszy Napastnik UEFA</title>
+						<years>
+							<year>2021</year>
+						</years>
+				</achievement>	
+				<achievement n="4">
+					<title>Najmłodszy zawodnik w historii Bundesligi, który zdobył 50 goli: 21 lat, 4 miesiące i 6 dni</title>
+						<years>
+							<year>2021</year>
+						</years>
+				</achievement>				
+			</achievements>
+		</player>
+	</players>
+	<coach wczesniejszekluby="FC Barcelona,Bayern Monachium">
+		<name>Pep</name>
+		<surname>Guardiola</surname>
+		<about>Pep Guardiola jest obecnym szkoleniowcem Manchesteru City. Ten wybitny hiszpan wraz ze swoimi podopiecznymi 34 razy zdobył mistrzostwo Angli, Niemiec czy Hiszpanii.</about>
+	</coach>
+</hipertext>
