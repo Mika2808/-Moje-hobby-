@@ -1,0 +1,200 @@
+<!DOCTYPE HTML> 
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Moje hobby</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital@1&family=Lato&display=swap" rel="stylesheet">
+	<style>
+		#content
+		{
+			height:1180px;
+			background-color:#FEFFDA;
+			margin-top:30px;
+			border:5px solid #6AA4D1;
+		}
+		h2{
+		text-align:center;}
+		@media only screen and (max-width: 400px) 
+		{
+		   #content{margin:0;width:93%;	margin-left:auto;margin-right:auto;height:1600px;}
+		   main{height:1630px;}
+		   h1{font-size:20px;}
+			#back{font-size:20px;}
+			#boys{width:120px;height:125px;margin:10px;margin-top:30px;}
+			#list{font-size:13px;width:100%}
+			#filling{clear:both;margin:0;margin-left:10px;text-align:center;width:300px;position:relative;font-size:13px;height:800px;}
+			#box{margin:0; height:100px; width:275px;margin-left:auto;;margin-right:auto;}
+			#tararara{width:250px;margin-left:auto;;margin-right:auto;}
+			#bmit{margin:0;}
+		}
+	</style>
+</head>
+
+<body>
+
+<div id="cointainer">
+		
+<header>		
+		<div id="logo">
+			<a href="https://www.mancity.com/" target="_blank"><img src="logo.jpg" alt="logo" style="width:100%;height:100%;"></a>
+				
+		</div>
+			
+		<div id="name">
+			Manchester City
+		</div>
+</header>	
+<nav>	
+	<div id="nav" class="blocks">
+		<ol id="dance">
+				<li class="tile"><a href="index.html"><i class="icon-emo-happy" style="float:left"></i>Strona główna</a></li>
+				<li class="tile"><a href="historia.html"><i class="icon-soccer-ball" style="float:left"></i>Historia</a></li>
+				<li class="tile"><a href="sklad.html"><i class="icon-users" style="float:left"></i>Skład</a></li>
+				<li class="tile"><i class="icon-th-list" style="float:left"></i><a href="#">Sezony</a>
+					<ul>
+						<li><a href="sezon.html">2022/2023</a></li>
+						<li><a href="sezon1.html">2021/2022</a></li>
+						<li><a href="sezon2.html">2020/2021</a></li>
+
+					</ul>
+				</li>
+				<li class="tile1"><a href="https://www.facebook.com/mancity/" target="_blank"><i class="icon-facebook-squared" style="float:left"></i>Dołącz na FB!</a></li>
+		</ol>	
+	</div>
+</nav>
+<main>	
+	<div id="content" style="font-family: 'Anton', sans-serif;"> 
+		
+		<div id="sklad">
+			<h1>A oto cała załoga Manchesteru City:</h1>
+		</div>
+		
+		<div id="list">
+			<ol>
+				<li>Żaden skład nie funkcjonowałby dobrze bez świetnie dobranego selekcjonera jakim jest
+					<ul>
+						<li>Pep Guardiola</li>	
+					</ul>
+				</li>	
+				<li>Bramkarze
+					<ul>
+						<li>Ederson Santana de Moraes</li>
+						<li>Zack Steffen</li>
+						<li>Stefan Ortega Moreno</li>
+						<li>Scott Carson</li>				
+					</ul></li>
+				<li>Obrońcy
+				<ul>
+						<li>Kyle Walker</li>
+						<li>Ruben Dias</li>
+						<li>John Stones</li>
+						<li>Nathan Ake</li>				
+						<li>Joao Cancelo</li>				
+						<li>Aymeric Laporte</li>				
+						<li>Sergio Gomez</li>				
+						<li>Manuel Akanji</li>				
+						<li>Rico Lewis</li>				
+						<li>Joshua Wilson Esbrand</li>				
+					</ul></li>
+				<li>Pomocnicy
+					<ul>
+						<li>Kalvin Phillips</li>
+						<li>Ilkay Gundogan</li>
+						<li>Jack Grealish</li>
+						<li>Rodrigo</li>
+						<li>Bernardo Silva</li>
+						<li>Kevin De Bruyne</li>				
+						<li>Phil Foden</li>				
+						<li>Cole Palmer</li>														
+					</ul>
+				</li>
+				<li>Napastnicy
+					<ul>
+						<li>Erling Haaland</li>
+						<li>Rivad Mahrez</li>
+						<li>Julian Alvarez</li>	
+												
+					</ul>
+				</li>
+			</ol>				
+		</div>
+		
+		<div id="filling">
+			<h2>ANKIETA</h2>
+			
+			<form action="odbierz.php" method="get">
+			<fieldset>
+			<legend>Dane osobowe:</legend>
+				<label for="Imie">Imie:</label><br>
+				<input type="text" id="Imie" name="Imie"><br>
+				<label for="Nazwisko">Nazwisko:</label><br>
+				<input type="text" id="Nazwisko" name="Nazwisko"><br>
+			</fieldset>
+			
+			<fieldset id="box" style="margin-top:30px; height:150px;">
+			<legend>Doświadczenie w piłce nożnej</legend>
+				<label>Opowiedz o swoim doświadczeniu związanym z piłką nożną:</label>
+				<textarea id="tararara" name="Doświadczenie" rows="3" cols="50"></textarea><br>
+			</fieldset>
+			
+			<fieldset style="margin-top:30px;">
+			<legend>Znajdę Twojego ulubionego piłkarza</legend>
+				<label>1.Jaką płeć ma twój ulubiony zawodnik/zawodniczka:</label><br>
+					<input type="radio" name ="Płeć" id="Mężczyzna" value="M">
+					<label for="Mężczyzna">Mężczyzna</label>
+					
+					<input type="radio" name ="plec" id="Kobieta" value="K">
+					<label for="Kobieta">Kobieta</label><br><br>
+				
+				<label>2.W jakich ligach grał/a twój ulubiony zawodnik/zawodniczka:</label><br>
+					<input type="checkbox" id="ang" name="ang" value="Premier League">
+					<label for="ang"> Premier League</label><br>
+					
+					<input type="checkbox" id="fr" name="fr" value="Ligue 1">
+					<label for="fr"> Ligue 1</label><br>
+					
+					<input type="checkbox" id="hisz" name="hisz" value="LaLiga Santander">
+					<label for="hisz"> LaLiga Santander</label><br>
+					
+					<input type="checkbox" id="ger" name="ger" value="Bundesliga">
+					<label for="ger"> Bundesliga</label><br>
+					
+					<input type="checkbox" id="it" name="it" value="Serie A">
+					<label for="it"> Serie A</label><br>
+					
+					<input type="checkbox" id="no" name="no" value="Nic z powyższych">
+					<label for="no"> Nic z powyższych</label><br><br>
+					
+				<label for="wiek">3.Ile ma lat:</label>
+					<select id="wiek" name="wiek">
+						<option value="15-18">15-18</option>
+						<option value="18-25">18-25</option>
+						<option value="25-30">25-30</option>
+						<option value="30-35">30-35</option>
+						<option value="35+">35+</option>
+					</select><br><br>
+			</fieldset>
+			<div  id="bmit" >
+			<input type="submit" value="Submit">
+			<input type="reset"></div>
+			</form>
+		</div>
+	</div>
+</main>
+<footer>
+	<div id="footer">
+	Copyright 2022, Mikołaj Kabała grupa 1 Student
+	</div>
+</footer>	
+</div>
+	
+	
+	
+</body>
+
+
+
+</html>

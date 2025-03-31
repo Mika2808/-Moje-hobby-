@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="hipertext" type="hipertextType"/>
+	<xs:element name="image" type="adressType"/>
+	<xs:element name="link" type="adressType"/>
+	<xs:element name="position" type="xs:string"/>
+	
+	
+	<xs:complexType name="hipertextType">
+		<xs:sequence>
+			<xs:element name="author" type="authorType"/> 
+			<xs:element name="introduction" type="introductionType" />
+			<xs:element name="players" type="playersType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="coach" type="coachType"/>
+		 </xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="authorType">
+		<xs:sequence>
+			<xs:element name="name" type="shortstringType" />
+			<xs:element name="surname" type="shortstringType" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="coachType">
+		<xs:sequence>		
+			<xs:element name="name" type="shortstringType"/>
+			<xs:element name="surname" type="shortstringType"/>
+			<xs:element name="about" type="aboutType"/>			
+		</xs:sequence>
+		<xs:attribute name="wczesniejszekluby" use="required">
+			<xs:simpleType>
+				<xs:list>
+					<xs:simpleType>
+						<xs:restriction base="xs:string" >
+							<xs:minLength value="1"/>
+							<xs:maxLength value="30"/>
+							</xs:restriction>
+					</xs:simpleType>
+				</xs:list>
+			</xs:simpleType>
+		</xs:attribute>		
+	</xs:complexType>
+	
+	<xs:simpleType name="aboutType">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="170"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="shortstringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="longstringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="adressType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="source" type="xs:anyURI" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+		
+	<xs:simpleType name="introductionType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="420"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="placeType">
+		<xs:restriction base="xs:string">			
+			<xs:maxLength value="9" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="dayType">
+		<xs:restriction base="xs:integer">	
+			<xs:minInclusive value="0"/>
+			 <xs:maxInclusive value="2024"/>
+		</xs:restriction>
+	</xs:simpleType>
+		
+	<xs:complexType name="birthType">
+		<xs:sequence>
+			<xs:element name="day" type="dayType"/>
+			<xs:element name="month" type="xs:string"/>
+			<xs:element name="year" type="dayType"/>
+			<xs:element name="place" type="placeType"/>
+		</xs:sequence>
+	</xs:complexType>
+		
+	<xs:complexType name="yearType">
+		<xs:sequence>			
+			<xs:element name="year" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="achievementType">
+		<xs:sequence>
+			<xs:element name="title" type="longstringType"/>
+			<xs:element name="years" type="yearType"/>
+		</xs:sequence>
+		<xs:attribute name="n" type="xs:string"/>
+	</xs:complexType>
+	
+	<xs:complexType name="playersType">
+		<xs:sequence>
+			<xs:element name="player" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="authorType">
+							<xs:sequence>									
+								<xs:element name="birth" type="birthType" minOccurs="0" maxOccurs="unbounded"/>
+								<xs:element ref="position"/>
+								<xs:element ref="image" minOccurs="0" maxOccurs="unbounded"/>				
+								<xs:element ref="link" minOccurs="0" maxOccurs="unbounded"/>
+								<xs:element name="achievements" >
+									<xs:complexType >
+										<xs:sequence>
+											<xs:element name="achievement" type="achievementType"  maxOccurs="unbounded"/>										
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:attribute name="bleg" use="required">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="lewa"/>
+										<xs:enumeration value="prawa"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>						
+							<xs:attribute name="nr_koszuki" type="xs:integer"/>
+							<xs:attribute name="nationality" type="xs:string"/>
+							<xs:attribute name="wartoscrynkowa" type="xs:string"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	</xs:schema>

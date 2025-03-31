@@ -1,0 +1,31 @@
+<!ELEMENT hipertext (author,introduction,coacplayers,h)>
+<!ELEMENT coach (name,surname,about)>
+<!ATTLIST coach wczesniejszekluby CDATA #IMPLIED>
+<!ELEMENT about (#PCDATA)>
+<!ELEMENT author (name,surname)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT introduction (#PCDATA)>
+<!ELEMENT players (player+)>
+<!ELEMENT player (name,surname,birth,position,image,link+,achievements+)>
+<!ATTLIST player bleg (prawa|lewa) "lewa">
+<!ATTLIST player nr_koszuki CDATA #IMPLIED>
+<!ATTLIST player nationality CDATA #IMPLIED>
+<!ATTLIST player wartoscrynkowa CDATA #IMPLIED>
+<!ELEMENT birth (day,month,year,place)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT place (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image source CDATA #REQUIRED>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link source CDATA #REQUIRED>
+<!ELEMENT achievements (achievement+)>
+<!ELEMENT achievement (title,years+)>
+<!ATTLIST achievement n CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT years (year+)>
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST hipertext xmlns:xsi CDATA #REQUIRED>
+<!ATTLIST hipertext xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
